@@ -28,7 +28,7 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <img src="profile.jpg" alt="Photo of Mario Blazevski" style="width:200px; height:auto; border-radius:50%;">
+      <img src="mario.jpg" alt="Photo of Mario Blazevski" style="width:200px; height:auto; border-radius:50%;">
       
       
       <p>Hello! Welcome to my portfolio! I'm Mario Blazevski, 
