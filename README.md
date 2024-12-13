@@ -57,18 +57,26 @@ Championed environmental campaigns and road safety initiatives.</p>
     </section>
 
     <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project">
-        <h3>Formula Student Macedonia</h3>
-        <p>Founded the first Formula Student team in North Macedonia, focusing on building competitive race cars while promoting engineering excellence.</p>
+  <h2>Portfolio</h2>
+  <div class="project-container">
+    <div class="project-card">
+      <h3>Formula Student Macedonia</h3>
+      <p>Founded the first Formula Student team in North Macedonia, focusing on building competitive race cars while promoting engineering excellence.</p>
+      <div class="project-card-footer">2022 - Present</div>
+    </div>
+    <div class="project-card">
+      <h3>Aerth Racing</h3>
+      <p>Led multiple innovative campaigns and designs that showcased the potential of youth talent in STEM and engineering.</p>
+      <div class="project-card-footer">2021 - Present</div>
+    </div>
+    <div class="project-card">
+      <h3>H2O Colligo</h3>
+      <p>Designed a water collection and electricity production system, recognized by the Fund for Innovations and Technology.</p>
+      <div class="project-card-footer">2020</div>
+    </div>
+  </div>
+</section>
 
-        <h3>Aerth Racing</h3>
-        <p>Led multiple innovative campaigns and designs that showcased the potential of youth talent in STEM and engineering.</p>
-
-        <h3>H2O Colligo</h3>
-        <p>Designed a water collection and electricity production system, recognized by the Fund for Innovations and Technology.</p>
-      </div>
-    </section>
 
     <section id="blog">
       <h2>Blog</h2>
