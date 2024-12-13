@@ -110,7 +110,7 @@ Championed environmental campaigns and road safety initiatives.</p>
   </main>
 
   <footer>
-    <p>&copy; 2024 Mario Blazevski. All Rights Reserved.</p>
+    <p>&copy; 2025 Mario Blazevski. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
