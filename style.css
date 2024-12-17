@@ -1,132 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mario Blazevski's Personal Website">
-  <title>Mario Blazevski | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Mario Blazevski</h1>
-      <p>Aerospace Engineer | STEM Advocate | Motorsport Visionary</p>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about" class="active">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#rocket_trajectory">C Program</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="mario.jpg" alt="Photo of Mario Blazevski">
-      <p>
-        I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.
-      </p>
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <h3>Formula Student Macedonia</h3>
-          <p>Founded the first student team in North Macedonia to build competitive race cars.</p>
-        </div>
-        <div class="project-card">
-          <h3>Aerth Racing</h3>
-          <p>Led innovative campaigns to showcase youth talent in STEM and engineering.</p>
-        </div>
-        <div class="project-card">
-          <h3>H2O Colligo</h3>
-          <p>Designed a water collection and electricity production system recognized for innovation.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="rocket_trajectory">
-      <h2>Rocket Trajectory Simulation (C Program)</h2>
-      <p>This C program calculates the trajectory of a rocket using basic physics equations:</p>
-      <pre class="code-block">
-<code>
-#include &lt;stdio.h&gt;
-#include &lt;math.h&gt;
-
-#define GRAVITY 9.81
-
-int main() {
-    double velocity, angle, time, x, y;
-    printf("Enter launch velocity (m/s): ");
-    scanf("%lf", &velocity);
-    printf("Enter launch angle (degrees): ");
-    scanf("%lf", &angle);
-
-    angle = angle * M_PI / 180.0; // Convert angle to radians
-    time = 0.0;
-
-    printf("\nTrajectory Points:\n");
-    printf("Time (s)\tX (m)\t\tY (m)\n");
-
-    while (1) {
-        x = velocity * cos(angle) * time;
-        y = velocity * sin(angle) * time - 0.5 * GRAVITY * time * time;
-
-        if (y &lt; 0) break; // Rocket has hit the ground
-
-        printf("%.2f\t\t%.2f\t\t%.2f\n", time, x, y);
-        time += 0.1;
-    }
-
-    printf("Rocket trajectory simulation complete.\n");
-    return 0;
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  color: #5d4037;
+  background-color: #fdfdfd;
 }
-</code>
-      </pre>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a></p>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #8b5e3c;
+}
 
-/* About Section Image */
+/* Header */
+header {
+  background-color: #8b5e3c;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #a1887f;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  color: #ff7043;
+}
+
+/* About Section */
 #about img {
-  width: 150px; /* Fixed width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular shape */
-  display: block; /* Center the image */
-  margin: 20px auto; /* Spacing above and below */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
   #about img {
-    width: 120px; /* Smaller size for smaller screens */
+    width: 120px;
   }
 }
 
+/* Portfolio Section */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
 
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Mario Blazevski. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0
