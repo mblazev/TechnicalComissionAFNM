@@ -55,6 +55,7 @@
       <h2>Rocket Trajectory Simulation (C Program)</h2>
       <p>This is a simple C program that calculates the trajectory of a rocket using basic physics equations.</p>
       <pre class="code-block">
+<pre class="code-block">
 <code>
 #include &lt;stdio.h&gt;
 #include &lt;math.h&gt;
@@ -78,7 +79,7 @@ int main() {
         x = velocity * cos(angle) * time;
         y = velocity * sin(angle) * time - 0.5 * GRAVITY * time * time;
 
-        if (y < 0) break; // Rocket has hit the ground
+        if (y &lt; 0) break; // Rocket has hit the ground
 
         printf("%.2f\t\t%.2f\t\t%.2f\n", time, x, y);
         time += 0.1;
@@ -88,8 +89,8 @@ int main() {
     return 0;
 }
 </code>
-      </pre>
-    </section>
+</pre>
+    
 
     <section id="contact">
       <h2>Contact</h2>
