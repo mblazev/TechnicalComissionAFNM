@@ -26,6 +26,7 @@
   </nav>
 
   <main>
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <img src="mario.jpg" alt="Photo of Mario Blazevski">
@@ -34,6 +35,7 @@
       </p>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div class="project-container">
@@ -52,6 +54,7 @@
       </div>
     </section>
 
+    <!-- Rocket Trajectory Program -->
     <section id="rocket_trajectory">
       <h2>Rocket Trajectory Simulation (C Program)</h2>
       <p>This C program calculates the trajectory of a rocket using basic physics equations:</p>
@@ -92,6 +95,7 @@ int main() {
       </pre>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a></p>
