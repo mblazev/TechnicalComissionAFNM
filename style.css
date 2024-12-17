@@ -48,7 +48,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover, nav ul li a.active {
@@ -67,84 +67,34 @@ section p {
   text-align: justify;
 }
 
-/* About Image */
-#about img {
-  width: 150px; /* Set a fixed width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular shape */
-  display: block; /* Center the image */
-  margin: 0 auto 20px auto; /* Spacing below */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-@media (max-width: 768px) {
-  #about img {
-    width: 120px; /* Smaller size for smaller screens */
-  }
-}
-
-/* Project Cards */
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Code Block Styles */
+.code-block {
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 5px;
   padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Contact Form */
-form {
-  display: grid;
-  gap: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #ff7043;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form button:hover {
-  background-color: #e64a19;
-}
-
-/* Redirect Button */
-.redirect-button {
-  background-color: #ff7043;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  line-height: 1.6;
 }
 
-.redirect-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.code-block code {
+  display: block;
+  white-space: pre;
+  color: #f8f8f2;
+}
+
+#rocket_trajectory h2 {
+  margin-bottom: 10px;
+  color: #8b5e3c;
+}
+
+#rocket_trajectory p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 /* Footer */
@@ -153,20 +103,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul li {
-    text-align: center;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr;
-  }
 }
