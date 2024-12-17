@@ -105,6 +105,24 @@ int main() {
         <button type="submit">Send</button>
       </form>
     </section>
+
+/* About Section Image */
+#about img {
+  width: 150px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  display: block; /* Center the image */
+  margin: 20px auto; /* Spacing above and below */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+@media (max-width: 768px) {
+  #about img {
+    width: 120px; /* Smaller size for smaller screens */
+  }
+}
+
+
   </main>
 
   <footer>
