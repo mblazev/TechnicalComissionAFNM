@@ -6,7 +6,7 @@
   <meta name="description" content="Mario Blazevski's Personal Website">
   <title>Mario Blazevski | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -19,23 +19,38 @@
   <nav>
     <ul>
       <li><a href="#about" class="active">About Me</a></li>
+      <li><a href="#professional_experience">Experience</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#rocket_trajectory">C Program</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <img src="mario.jpg" alt="Photo of Mario Blazevski">
-      <p>
-        I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.
-      </p>
+      <p>I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.</p>
     </section>
 
-    <!-- Portfolio Section -->
+    <section id="professional_experience">
+      <h2>Professional Experience</h2>
+      <div class="experience">
+        <div>
+          <h3>Aerth Racing</h3>
+          <p>President and Founder (2022–Present)</p>
+        </div>
+        <div>
+          <h3>Automobile Federation of North Macedonia</h3>
+          <p>President, Technical Commission (2023–Present)</p>
+        </div>
+        <div>
+          <h3>Formula Student</h3>
+          <p>Chief Mechanical Scrutineer (2023–Present)</p>
+        </div>
+      </div>
+    </section>
+
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div class="project-container">
@@ -54,51 +69,20 @@
       </div>
     </section>
 
-    <!-- Rocket Trajectory Program -->
-    <section id="rocket_trajectory">
-      <h2>Rocket Trajectory Simulation (C Program)</h2>
-      <p>This C program calculates the trajectory of a rocket using basic physics equations:</p>
-      <pre class="code-block">
-<code>
-#include &lt;stdio.h&gt;
-#include &lt;math.h&gt;
-
-#define GRAVITY 9.81
-
-int main() {
-    double velocity, angle, time, x, y;
-    printf("Enter launch velocity (m/s): ");
-    scanf("%lf", &velocity);
-    printf("Enter launch angle (degrees): ");
-    scanf("%lf", &angle);
-
-    angle = angle * M_PI / 180.0; // Convert angle to radians
-    time = 0.0;
-
-    printf("\nTrajectory Points:\n");
-    printf("Time (s)\tX (m)\t\tY (m)\n");
-
-    while (1) {
-        x = velocity * cos(angle) * time;
-        y = velocity * sin(angle) * time - 0.5 * GRAVITY * time * time;
-
-        if (y &lt; 0) break; // Rocket has hit the ground
-
-        printf("%.2f\t\t%.2f\t\t%.2f\n", time, x, y);
-        time += 0.1;
-    }
-
-    printf("Rocket trajectory simulation complete.\n");
-    return 0;
-}
-</code>
-      </pre>
+    <section id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>Coming Soon...</h3>
+        <p>Stay tuned for insightful posts and updates!</p>
+      </article>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a></p>
+      <button class="redirect-button" onclick="window.location.href='https://www.linkedin.com/in/mario-blazevski-774a31196/';">
+        Visit LinkedIn Profile
+      </button>
       <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -114,5 +98,25 @@ int main() {
   <footer>
     <p>&copy; 2025 Mario Blazevski. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav ul li a");
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 50;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
