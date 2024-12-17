@@ -19,7 +19,6 @@
   <nav>
     <ul>
       <li><a href="#about" class="active">About Me</a></li>
-      <li><a href="#professional_experience">Experience</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#rocket_trajectory">C Program</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -30,7 +29,9 @@
     <section id="about">
       <h2>About Me</h2>
       <img src="mario.jpg" alt="Photo of Mario Blazevski">
-      <p>I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.</p>
+      <p>
+        I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.
+      </p>
     </section>
 
     <section id="portfolio">
@@ -53,9 +54,8 @@
 
     <section id="rocket_trajectory">
       <h2>Rocket Trajectory Simulation (C Program)</h2>
-      <p>This is a simple C program that calculates the trajectory of a rocket using basic physics equations.</p>
+      <p>This C program calculates the trajectory of a rocket using basic physics equations:</p>
       <pre class="code-block">
-<pre class="code-block">
 <code>
 #include &lt;stdio.h&gt;
 #include &lt;math.h&gt;
@@ -89,8 +89,8 @@ int main() {
     return 0;
 }
 </code>
-</pre>
-    
+      </pre>
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
