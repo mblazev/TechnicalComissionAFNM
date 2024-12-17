@@ -67,7 +67,7 @@ section p {
   text-align: justify;
 }
 
-/* Code Block Styles */
+/* Code Block */
 .code-block {
   background-color: #272822;
   color: #f8f8f2;
@@ -79,22 +79,51 @@ section p {
   line-height: 1.6;
 }
 
-.code-block code {
-  display: block;
-  white-space: pre;
-  color: #f8f8f2;
+/* Project Cards */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-#rocket_trajectory h2 {
-  margin-bottom: 10px;
-  color: #8b5e3c;
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#rocket_trajectory p {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  text-align: center;
-  font-size: 1.1rem;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ff7043;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e64a19;
 }
 
 /* Footer */
