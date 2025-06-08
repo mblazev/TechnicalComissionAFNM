@@ -179,7 +179,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
+    <p>&copy; 2025 Mario Blazevski-President of Technical-Comission Automobile Federation of North Macedonia</p>
   </footer>
 </body>
 </html>
