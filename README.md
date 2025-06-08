@@ -70,7 +70,8 @@
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
     <h1>Serres 2025 - Official Press & Notice Board</h1>
     <p>Automobile Federation of North Macedonia - Technical Commission</p>
-  </header>
+    <img src="Fédération_Internationale_de_l'Automobile_wordmark.png" alt="Member of FIA Logo" style="width: 100px; margin-top: 10px;" />
+</header>
 
   <nav>
     <a href="#home">Home</a>
