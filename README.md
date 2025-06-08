@@ -17,6 +17,11 @@
       padding: 20px;
       text-align: center;
     }
+    header img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
     nav {
       background: #333;
       padding: 10px;
@@ -62,6 +67,7 @@
 </head>
 <body>
   <header>
+    <img src="/mnt/data/ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
     <h1>Serres 2025 - Official Press & Notice Board</h1>
     <p>Automobile Federation of North Macedonia - Technical Commission</p>
   </header>
