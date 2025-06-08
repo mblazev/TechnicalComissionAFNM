@@ -66,6 +66,9 @@
   </style>
 </head>
 <body>
+  <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold;">
+    🔔 Notification: test1
+  </div>
   <header>
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
     <h1>Serres 2025 - Official Press & Notice Board</h1>
