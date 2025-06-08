@@ -67,7 +67,7 @@
 </head>
 <body>
   <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold;">
-    🔔 Notification: <a href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank" style="color: #000; text-decoration: underline;">Entry Form is now open</a>
+    🔔 Notification: <a href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank" style="color: #000; text-decoration: underline;">Entry Form is now open — CLOSING DATE: Monday, 30th June 2025</a>
   </div>
   <header>
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
@@ -117,33 +117,65 @@
       <p>Photos and videos from the event will appear here.</p>
     </section>
       <section id="info">
-      <h2>Event Information</h2>
-      <div class="notice">
-        <strong>🏁 Categories Featured</strong>
-        <p>Serres 2025 will include the following vehicle categories: <br>
-        - National Formula Cars <br>
-        - Touring Cars (Group N, A, and E1) <br>
-        - Historic Cars <br>
-        - Junior & Young Driver Trophies</p>
-      </div>
-      <div class="notice">
-        <strong>📞 Contact Personnel</strong>
-        <p>
-          - Clerk of the Course: Georgios Papadopoulos<br>
-          - Technical Delegate: Mario Blazevski<br>
-          - Secretary of the Event: Eleni Dimitriou
-        </p>
-      </div>
-      <div class="notice">
-        <strong>🔊 Noise Limitation</strong>
-        <p>All vehicles must comply with a maximum noise level of 100 dB(A) measured in static test conditions, as per FIA Appendix J.</p>
-      </div>
-      <div class="notice">
-        <strong>⚙️ Technical Data</strong>
-        <p>All participating vehicles must be equipped with a visible and operational towing hook (front and rear), fire extinguisher, and must pass technical scrutineering before first practice.<br>
-        Minimum weight, fuel type, and homologation details must comply with category regulations.</p>
-      </div>
-    </section>
+  <h2>Event Information</h2>
+
+  <div class="notice">
+    <strong>🏁 Name of the Event</strong>
+    <p><strong>CIRCUIT RACE AK PERFORMANS</strong></p>
+    <p>📍 Place: Automotodrom Serres, Greece</p>
+    <p>📅 Date: 05th – 06th July 2025</p>
+  </div>
+
+  <div class="notice">
+    <strong>📦 Organizer</strong>
+    <p>
+      AK PERFORMANS<br>
+      Post address: ul: Franklin Ruzvelt br: 40/1-12<br>
+      Telephone: +38976431880<br>
+      E-mail: <a href="mailto:akperformans@gmail.com">akperformans@gmail.com</a>
+    </p>
+  </div>
+
+  <div class="notice">
+    <strong>🧑‍⚖️ Officials</strong>
+    <p>
+      Stewards Panel President: Pavle Donevski<br>
+      Steward: Ranko Stanojkovski<br>
+      Steward: Dean Grbac<br>
+      Clerk of the Course: Kiril Karanakov<br>
+      Chief of the Marshals: Autodrom SERRES<br>
+      Secretary: Stefka Valeva<br>
+      Chief Scrutineer: Autodrom SERRES<br>
+      Scrutineering Assistant: Autodrom SERRES<br>
+      Administrative Checks Manager: Stefka Valeva<br>
+      Park Ferme and Paddock Manager: Mario Blazevski<br>
+      Chief Timekeeper: Autodrom SERRES<br>
+      Chief Medical Officer: Prim. Dr. Spec. Vasilaki Karabasev
+    </p>
+  </div>
+
+  <div class="notice">
+    <strong>📌 Locations</strong>
+    <p>
+      Race Control: Main Building, 1st Floor<br>
+      Race Office: Main Building, 1st Floor<br>
+      Stewards’ Office: Main Building, 1st Floor<br>
+      Official Notice Board: Main Entrance of the Press Center, Ground Floor
+    </p>
+  </div>
+
+  <div class="notice">
+    <strong>📢 Status of the Event</strong>
+    <p>
+      - FIA CEZ Circuit and Endurance Championship<br>
+      - Championship for North Macedonia<br>
+      - TWINGO CUP<br>
+      - CLIO CUP<br>
+      - HONDA CUP<br>
+      - BG CUP
+    </p>
+  </div>
+</section>
   </main>
 
   <footer>
