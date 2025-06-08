@@ -1,122 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mario Blazevski's Personal Website">
-  <title>Mario Blazevski | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serres 2025 - Official Notice Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+    }
+    .notice {
+      background: #eef;
+      border-left: 4px solid #0055aa;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+    }
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0055aa;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .download-link:hover {
+      background-color: #003e80;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Mario Blazevski</h1>
-      <p>Aerospace Engineer | STEM Advocate | Motorsport Visionary</p>
-    </div>
+    <h1>Serres 2025 - Official Press & Notice Board</h1>
+    <p>Automobile Federation of North Macedonia - Technical Commission</p>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#about" class="active">About Me</a></li>
-      <li><a href="#professional_experience">Experience</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#home">Home</a>
+    <a href="#documents">Documents</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#media">Media</a>
   </nav>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="mario.jpg" alt="Photo of Mario Blazevski">
-      <p>I'm Mario Blazevski, a dedicated innovator and team leader from North Macedonia. With a profound interest in STEM, engineering, and motorsport, I have successfully led projects, promoted STEM education, and inspired future generations through Aerth Racing and other initiatives.</p>
-    </section>
-
-    <section id="professional_experience">
-      <h2>Professional Experience</h2>
-      <div class="experience">
-        <div>
-          <h3>Aerth Racing</h3>
-          <p>President and Founder (2022–Present)</p>
-        </div>
-        <div>
-          <h3>Automobile Federation of North Macedonia</h3>
-          <p>President, Technical Commission (2023–Present)</p>
-        </div>
-        <div>
-          <h3>Formula Student</h3>
-          <p>Chief Mechanical Scrutineer (2023–Present)</p>
-        </div>
+    <section id="home">
+      <h2>Latest Notices</h2>
+      <div class="notice">
+        <strong>Bulletin 01 - Scrutineering Update</strong>
+        <p>Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B.</p>
+      </div>
+      <div class="notice">
+        <strong>Welcome Note</strong>
+        <p>Welcome to the official online notice board for Serres 2025! All important information and updates will be posted here.</p>
       </div>
     </section>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <h3>Formula Student Macedonia</h3>
-          <p>Founded the first student team in North Macedonia to build competitive race cars.</p>
-        </div>
-        <div class="project-card">
-          <h3>Aerth Racing</h3>
-          <p>Led innovative campaigns to showcase youth talent in STEM and engineering.</p>
-        </div>
-        <div class="project-card">
-          <h3>H2O Colligo</h3>
-          <p>Designed a water collection and electricity production system recognized for innovation.</p>
-        </div>
-      </div>
+    <section id="documents">
+      <h2>Official Documents</h2>
+      <p>Click below to download the latest regulations and bulletins.</p>
+      <a class="download-link" href="https://afm.com.mk/wp-content/uploads/2025/06/Supplementary-Regulation-SERRES-2025.docx.pdf" target="_blank">Download Supplementary Regulation</a>
     </section>
 
-    <section id="blog">
-      <h2>Blog</h2>
-      <article>
-        <h3>Coming Soon...</h3>
-        <p>Stay tuned for insightful posts and updates!</p>
-      </article>
+    <section id="schedule">
+      <h2>Event Schedule</h2>
+      <p>The full time schedule will be uploaded soon. Please check back regularly for updates.</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a></p>
-      <button class="redirect-button" onclick="window.location.href='https://www.linkedin.com/in/mario-blazevski-774a31196/';">
-        Visit LinkedIn Profile
-      </button>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <section id="media">
+      <h2>Media</h2>
+      <p>Photos and videos from the event will appear here.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Mario Blazevski. All Rights Reserved.</p>
+    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
   </footer>
-
-  <script>
-    document.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll("nav ul li a");
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 50;
-        if (scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
 </body>
 </html>
