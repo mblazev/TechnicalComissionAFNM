@@ -67,7 +67,7 @@
 </head>
 <body>
   <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold;">
-    🔔 Notification: test1
+    🔔 Notification: <a href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank" style="color: #000; text-decoration: underline;">Entry Form is now open</a>
   </div>
   <header>
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
@@ -85,16 +85,21 @@
 
   <main>
     <section id="home">
-      <h2>Latest Notices</h2>
-      <div class="notice">
-        <strong>Bulletin 01 - Scrutineering Update</strong>
-        <p>Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B.</p>
-      </div>
-      <div class="notice">
-        <strong>Welcome Note</strong>
-        <p>Welcome to the official online notice board for Serres 2025! All important information and updates will be posted here.</p>
-      </div>
-    </section>
+  <h2>Latest Notices</h2>
+  <div class="notice">
+    <strong>Bulletin 01 - Scrutineering Update</strong>
+    <p>Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B.</p>
+  </div>
+  <div class="notice">
+    <strong>Welcome Note</strong>
+    <p>Welcome to the official online notice board for Serres 2025! All important information and updates will be posted here.</p>
+  </div>
+  <div class="notice">
+    <strong>Entry Form</strong>
+    <p>Please use the following link to register for Serres 2025:</p>
+    <a class="download-link" href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank">Go to Entry Form</a>
+  </div>
+</section>
 
     <section id="documents">
       <h2>Official Documents</h2>
