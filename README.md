@@ -87,17 +87,29 @@
     <section id="home">
   <h2>Latest Notices</h2>
   <div class="notice">
-    <strong>Bulletin 01 - Scrutineering Update</strong>
+    <strong>Bulletin 01 - Scrutineering Update <span style='font-weight:normal;'>(Posted: 2025-06-04 08:00)</span></strong>
     <p>Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B.</p>
   </div>
   <div class="notice">
-    <strong>Welcome Note</strong>
+    <strong>Bulletin 02 - Welcome Note <span style='font-weight:normal;'>(Posted: 2025-06-05 09:30)</span></strong>
     <p>Welcome to the official online notice board for Serres 2025! All important information and updates will be posted here.</p>
   </div>
   <div class="notice">
-    <strong>Entry Form</strong>
+    <strong>Bulletin 03 - Entry Form <span style='font-weight:normal;'>(Posted: 2025-06-06 12:00)</span></strong>
     <p>Please use the following link to register for Serres 2025:</p>
     <a class="download-link" href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank">Go to Entry Form</a>
+  </div>
+  <div class="notice">
+    <strong>Bulletin 04 - Regulations & Technical Information <span style='font-weight:normal;'>(Posted: 2025-06-08 22:00)</span></strong>
+    <p>
+      The event is governed by the following regulations: FIA ISC, 2025 FIA CEZ Circuit Rules, Twingo Cup, Honda Cup, BG Cup, ASN and all official bulletins.<br><br>
+      <strong>Eligible Cars:</strong> Formula 3 (various homologations), Formula Renault, Formula Master, Formula Regional Tatuus, Opel OPC, Radical, LMP3/LMP2, CN, SCC, Praga R1, KTM X-Bow, GT3, GT4, TCR, GTC, Clio, Twingo, MX-5, etc.<br>
+      <strong>Minimum Weights:</strong> Defined per car type and homologation year (e.g. F3 pre-2011: ≥540kg, F3 2012–2018: ≥550kg, Tatuus F3 T318: ≥675kg).<br>
+      <strong>BOP:</strong> All cars must comply with CEZ Working Group-defined Balance of Performance limits and be equipped with data recorders for post-session analysis.<br>
+      <strong>Division Specifics:</strong> D4 (GT/Touring Cars), D5 (Prototypes/CN/LMP), each with unique lighting, noise and tech regulations.<br>
+      <strong>Noise Limit:</strong> All vehicles must comply with the 110 dB(A) maximum, unless otherwise stated.<br><br>
+      For the full details, consult the Supplementary Regulation document or contact technical staff.
+    </p>
   </div>
 </section>
 
@@ -179,7 +191,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Mario Blazevski-President of Technical-Comission Automobile Federation of North Macedonia</p>
+    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
   </footer>
 </body>
 </html>
