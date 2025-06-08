@@ -116,6 +116,34 @@
       <h2>Media</h2>
       <p>Photos and videos from the event will appear here.</p>
     </section>
+      <section id="info">
+      <h2>Event Information</h2>
+      <div class="notice">
+        <strong>🏁 Categories Featured</strong>
+        <p>Serres 2025 will include the following vehicle categories: <br>
+        - National Formula Cars <br>
+        - Touring Cars (Group N, A, and E1) <br>
+        - Historic Cars <br>
+        - Junior & Young Driver Trophies</p>
+      </div>
+      <div class="notice">
+        <strong>📞 Contact Personnel</strong>
+        <p>
+          - Clerk of the Course: Georgios Papadopoulos<br>
+          - Technical Delegate: Mario Blazevski<br>
+          - Secretary of the Event: Eleni Dimitriou
+        </p>
+      </div>
+      <div class="notice">
+        <strong>🔊 Noise Limitation</strong>
+        <p>All vehicles must comply with a maximum noise level of 100 dB(A) measured in static test conditions, as per FIA Appendix J.</p>
+      </div>
+      <div class="notice">
+        <strong>⚙️ Technical Data</strong>
+        <p>All participating vehicles must be equipped with a visible and operational towing hook (front and rear), fire extinguisher, and must pass technical scrutineering before first practice.<br>
+        Minimum weight, fuel type, and homologation details must comply with category regulations.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
