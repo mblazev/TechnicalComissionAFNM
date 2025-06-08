@@ -125,9 +125,10 @@
     </section>
 
     <section id="media">
-      <h2>Media</h2>
-      <p>Photos and videos from the event will appear here.</p>
-    </section>
+  <h2>Media</h2>
+  <p>Photos and videos from the event will appear here.</p>
+  <img src="poster.png" alt="FIA Central European Zone Championship Poster" style="width:100%; max-width:700px; display:block; margin:auto; margin-top:20px;" />
+</section>
       <section id="info">
   <h2>Event Information</h2>
 
