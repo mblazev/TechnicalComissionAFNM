@@ -62,13 +62,15 @@
       .then(bulletins => {
         const container = document.getElementById('bulletin-archive');
         container.innerHTML = '';
-        bulletins.reverse().forEach((b, i) => {
-          container.innerHTML += `
-            <div class="notice">
-              <strong>Bulletin ${String(i + 1).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
-              <p>${b.content}</p>
-            </div>`;
-        });
+       const total = bulletins.length;
+bulletins.reverse().forEach((b, i) => {
+  container.innerHTML += `
+    <div class="notice">
+      <strong>Bulletin ${String(total - i).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
+      <p>${b.content}</p>
+    </div>`;
+});
+
       })
       .catch(err => {
         document.getElementById('bulletin-archive').innerHTML = '<p>Could not load bulletins.</p>';
