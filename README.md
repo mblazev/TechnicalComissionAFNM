@@ -26,6 +26,9 @@
       background: #333;
       padding: 10px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -91,7 +94,7 @@
   <h2>Latest Notices</h2>
   <div class="notice">
     <strong>Bulletin 01 - Scrutineering Update <span style='font-weight:normal;'>(Posted: 2025-06-04 08:00)</span></strong>
-    <p>Scrutineering will start on Friday of the event weekend, time will be annonced, in Paddock Zone.</p>
+    <p>Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B.</p>
   </div>
   <div class="notice">
     <strong>Bulletin 02 - Welcome Note <span style='font-weight:normal;'>(Posted: 2025-06-05 09:30)</span></strong>
