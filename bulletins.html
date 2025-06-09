@@ -62,7 +62,7 @@
       .then(bulletins => {
         const container = document.getElementById('bulletin-archive');
         container.innerHTML = '';
-        bulletins.forEach((b, i) => {
+        bulletins.reverse().forEach((b, i) => {
           container.innerHTML += `
             <div class="notice">
               <strong>Bulletin ${String(i + 1).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
