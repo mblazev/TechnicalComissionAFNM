@@ -103,7 +103,7 @@
     .then(bulletins => {
       const container = document.getElementById('bulletin-container');
       container.innerHTML = '';
-      bulletins.forEach((b, i) => {
+      bulletins.slice(0, 4).forEach((b, i) => {
         container.innerHTML += `
           <div class="notice">
             <strong>Bulletin ${String(i + 1).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
