@@ -73,7 +73,10 @@
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
     <h1>Serres 2025 - Official Press & Notice Board</h1>
     <p>Automobile Federation of North Macedonia - Technical Commission</p>
-    <img src="fia_wordmakr.png" alt="Member of FIA Logo" style="width: 100px; margin-top: 10px;" />
+    <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 10px;">
+  <img src="fia_wordmakr.png" alt="Member of FIA Logo" style="width: 100px;" />
+  <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" style="width: 100px;" />
+</div>
 </header>
 
   <nav>
