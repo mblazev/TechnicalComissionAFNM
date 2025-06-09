@@ -82,12 +82,14 @@
 </div>
 </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#documents">Documents</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#media">Media</a>
-  </nav>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#documents">Documents</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#media">Media</a>
+  <a href="bulletins.html">Bulletins Archive</a>
+</nav>
+
 
   <main>
     <section id="home">
