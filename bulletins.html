@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serres 2025 - Bulletin Archive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+    }
+    .notice {
+      background: #eef;
+      border-left: 4px solid #0055aa;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+    }
+    a.back {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #0055aa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bulletin Archive</h1>
+    <p>All published updates for Serres 2025</p>
+  </header>
+  <main>
+    <a href="index.html" class="back">← Back to Notice Board</a>
+    <div id="bulletin-archive">
+      <p>Loading bulletins...</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
+  </footer>
+
+  <script>
+    fetch('bulletins.json')
+      .then(res => res.json())
+      .then(bulletins => {
+        const container = document.getElementById('bulletin-archive');
+        container.innerHTML = '';
+        bulletins.forEach((b, i) => {
+          container.innerHTML += `
+            <div class="notice">
+              <strong>Bulletin ${String(i + 1).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
+              <p>${b.content}</p>
+            </div>`;
+        });
+      })
+      .catch(err => {
+        document.getElementById('bulletin-archive').innerHTML = '<p>Could not load bulletins.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
