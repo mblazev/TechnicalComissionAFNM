@@ -72,6 +72,7 @@
   <div style="background-color: #ffcc00; color: #000; text-align: center; padding: 10px; font-weight: bold;">
     🔔 Notification: <a href="https://docs.google.com/forms/d/1DSF5dxeb91_d1okZPqDh-hJF0cUHdqEudYTZYVjf4Co/preview" target="_blank" style="color: #000; text-decoration: underline;">Entry Form is now open — CLOSING DATE: Monday, 30th June 2025</a>
   </div>
+
   <header>
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="Automobile Federation of North Macedonia Logo" />
     <h1>Serres 2025 - Official Press & Notice Board</h1>
@@ -99,26 +100,19 @@
     </section>
 
     <script>
-  fetch('bulletins.json')
-    .then(response => response.json())
-    .then(bulletins => {
-      const container = document.getElementById('bulletin-container');
-      container.innerHTML = '';
-      const total = bulletins.length;
-      bulletins.reverse().slice(0, 4).forEach((b, i) => {
-        container.innerHTML += `
-          <div class="notice">
-            <strong>Bulletin ${String(total - i).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
-            <p>${b.content}</p>
-          </div>`;
-      });
-    })
-    .catch(error => {
-      document.getElementById('bulletin-container').innerHTML = '<p>Failed to load bulletins.</p>';
-      console.error('Error loading bulletins:', error);
-    });
-</script>
-
+      fetch('bulletins.json')
+        .then(response => response.json())
+        .then(bulletins => {
+          const container = document.getElementById('bulletin-container');
+          container.innerHTML = '';
+          const total = bulletins.length;
+          bulletins.reverse().slice(0, 4).forEach((b, i) => {
+            container.innerHTML += `
+              <div class="notice">
+                <strong>Bulletin ${String(total - i).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
+                <p>${b.content}</p>
+              </div>`;
+          });
         })
         .catch(error => {
           document.getElementById('bulletin-container').innerHTML = '<p>Failed to load bulletins.</p>';
@@ -157,6 +151,7 @@
 
     <section id="info">
       <h2>Event Information</h2>
+      <!-- Event Info Panels -->
       <div class="notice">
         <strong>🏁 Name of the Event</strong>
         <p><strong>CIRCUIT RACE AK PERFORMANS</strong></p>
