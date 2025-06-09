@@ -1,20 +1,16 @@
 [
-{
-    "title": "Pushnotif Update",
-    "timestamp": "2025-06-09 17:13",
-    "content": "test00"
-  },
-
-  {
-    "title": "Scrutineering Update",
-    "timestamp": "2025-06-04 08:00",
-    "content": "Scrutineering will start on June 14, 08:00 sharp in Paddock Zone B."
-  },
+  
   {
     "title": "Welcome Note",
     "timestamp": "2025-06-05 09:30",
-    "content": "Welcome to the official online notice board for Serres 2025! All important information and updates will be posted here."
+    "content": "Welcome to the official online notice board for FIA CEZ Championship race of Serres 2025! All important information and updates will be posted here."
   },
+{
+    "title": "Scrutineering Update",
+    "timestamp": "2025-06-04 08:00",
+    "content": "Scrutineering will start on the Friday of the race weekend.Time will be announced. The expected location is in Paddock Zone B."
+  },
+
   {
     "title": "Entry Form",
     "timestamp": "2025-06-06 12:00",
@@ -26,9 +22,9 @@
     "content": "The event is governed by the FIA CEZ Circuit Regulations and Supplementary Bulletins. All cars must comply with BOP, minimum weight, and noise limits."
   },
 {
-    "title": "Bulletin test , B#5",
+    "title": "Scrutineering (technical) schedule ",
     "timestamp": "2025-06-09 17:00",
-    "content": "The event is governed by the FIA CEZ Circuit."
+    "content": "The scrutineering schedule will follow soon. Please check for updates regularly."
   }
 
 ]
