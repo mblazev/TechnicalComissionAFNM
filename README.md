@@ -132,7 +132,20 @@
   <p>Photos and videos from the event will appear here.</p>
   <img src="poster.png" alt="FIA Central European Zone Championship Poster" style="width:100%; max-width:700px; display:block; margin:auto; margin-top:20px;" />
 </section>
-      <section id="info">
+
+    <section id="weather">
+      <h2>Current Weather at Serres Circuit</h2>
+      <div style="height:400px;width:100%;">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://embed.windy.com/embed2.html?lat=41.078&lon=23.550&detailLat=41.078&detailLon=23.550&width=650&height=450&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=12&pressure=true&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="info">
   <h2>Event Information</h2>
 
   <div class="notice">
