@@ -214,7 +214,7 @@
       <h2>Tor Poznań – Clio Cup & GT Cup Series 2025</h2>
       <div class="notice">
         <strong>📍 Location & Date</strong>
-        <p><strong>Tor Poznań, Poland</strong><br>Date: 12–13 July 2025</p>
+        <p><strong>Tor Poznań, Poland</strong><br>Date: 27-29 June 2025</p>
       </div>
 
       <div class="notice">
