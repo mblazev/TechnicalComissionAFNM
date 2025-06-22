@@ -89,7 +89,7 @@
     <a href="#schedule">Schedule</a>
     <a href="#media">Media</a>
     <a href="bulletins.html">Bulletins Archive</a>
-    <a href="#poznan">Tor Poznań</a>
+    <a href="torpoznan.html">Tor Poznań</a> <!-- ✅ New Link Added -->
   </nav>
 
   <main>
@@ -206,39 +206,6 @@
           - CLIO CUP<br>
           - HONDA CUP<br>
           - BG CUP
-        </p>
-      </div>
-    </section>
-
-    <section id="poznan">
-      <h2>Tor Poznań – Clio Cup & GT Cup Series 2025</h2>
-      <div class="notice">
-        <strong>📍 Location & Date</strong>
-        <p><strong>Tor Poznań, Poland</strong><br>Date: 27-29 June 2025</p>
-      </div>
-
-      <div class="notice">
-        <strong>🏆 Participating Series</strong>
-        <p>
-          - Clio Cup Bohemia<br>
-          - GT Cup Series<br>
-          - Local & regional endurance categories
-        </p>
-      </div>
-
-      <div class="notice">
-        <strong>📑 Entry Lists</strong>
-        <p>
-          <a class="download-link" href="Entrylist_2025_POZNAN_CLIO CUP.xlsx" download>Download Clio Cup Entry List</a><br>
-          <a class="download-link" href="GT_CUP_Series_Entrylist_Poznan_Org_v3_18.06.2025.xlsx" download>Download GT Cup Entry List</a>
-        </p>
-      </div>
-
-      <div class="notice">
-        <strong>🔗 External Resources</strong>
-        <p>
-          <a class="download-link" href="https://cliocup-bohemia.com/" target="_blank">Clio Cup Bohemia Website</a><br>
-          <a class="download-link" href="https://www.gtcupseries.com/" target="_blank">GT Cup Series Official Website</a>
         </p>
       </div>
     </section>
