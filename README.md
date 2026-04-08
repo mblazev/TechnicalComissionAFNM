@@ -89,7 +89,8 @@
     <a href="#schedule">Schedule</a>
     <a href="#media">Media</a>
     <a href="bulletins.html">Bulletins Archive</a>
-    <a href="torpoznan.html">Tor Poznań</a> <!-- ✅ New Link Added -->
+    <a href="torpoznan.html">Tor Poznań</a>
+    <a href="grobnik.html">Grobnik 2026</a><!-- ✅ New Link Added -->
   </nav>
 
   <main>
