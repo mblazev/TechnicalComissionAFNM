@@ -8,12 +8,10 @@
 </head>
 <body>
 
-<!-- Top alert bar -->
 <div class="topbar">
   FIA Central European Zone Championship 2026 — Official Technical Commission Portal
 </div>
 
-<!-- Nav -->
 <nav class="site-nav">
   <div class="nav-inner">
     <a class="nav-brand" href="index.html">
@@ -22,10 +20,22 @@
     </a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
-      <a href="serres.html">Serres</a>
-      <a href="torpoznan.html">Tor Poznań</a>
-      <a href="grobnik.html">Grobnik</a>
-      <a href="bulletins.html">All Bulletins</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn">Races <span class="arrow">▼</span></button>
+        <div class="nav-dropdown-content">
+          <div class="drop-label">2026 Season</div>
+          <a href="grobnik.html">🇭🇷 Grobnik, Croatia</a>
+          <div class="drop-divider"></div>
+          <div class="drop-label">2025 Season</div>
+          <a href="serres.html">🇬🇷 Serres, Greece</a>
+          <a href="torpoznan.html">🇵🇱 Tor Poznań, Poland</a>
+        </div>
+      </div>
+
+      <a href="commission.html">Commission</a>
+      <a href="regulations.html">Regulations</a>
+      <a href="bulletins.html">Bulletins</a>
     </div>
   </div>
 </nav>
@@ -37,27 +47,45 @@
     <img src="fia_wordmakr.png" alt="FIA Logo" />
     <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" />
   </div>
-  <h1>Technical Comission of <br/><span>Automobile Federation<br/><span>of North Macedonia</span></h1>
-  <p class="subtitle">President Mr. Mario Blazhevski &mdash; Official Notice Portal</p>
+  <h1>Automobile Federation<br/><span>of North Macedonia</span></h1>
+  <p class="subtitle">Technical Commission &mdash; Official Notice Portal</p>
   <p class="tagline">Official documents, bulletins, and event information for all FIA CEZ events organised under AFNM.</p>
 </section>
 
 <!-- Stats bar -->
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat"><div class="num">3</div><div class="label">Races — 2026</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Total Races</div></div>
+    <div class="stat"><div class="num">1</div><div class="label">Upcoming 2026</div></div>
     <div class="stat"><div class="num">CEZ</div><div class="label">Championship</div></div>
     <div class="stat"><div class="num">FIA</div><div class="label">Sanctioned</div></div>
-    <div class="stat"><div class="num">MK</div><div class="label">North Macedonia</div></div>
   </div>
 </div>
 
-<!-- Main content -->
+<!-- Main -->
 <main class="page-main">
 
-  <!-- 2026 Calendar -->
   <section>
-    <h2 class="section-title">2026 <span class="accent">FIA CEZ Calendar</span></h2>
+    <h2 class="section-title">2026 <span class="accent">Season Calendar</span></h2>
+    <div class="races-grid">
+
+      <div class="race-card">
+        <div class="card-band blue"></div>
+        <div class="card-body">
+          <div class="card-round blue">Round 1 — 2026</div>
+          <h3>Grobnik</h3>
+          <div class="card-country">🇭🇷 Croatia — Automotodrom Grobnik, Rijeka</div>
+          <div class="card-date">Date TBC — 2026</div>
+          <span class="card-status upcoming">Upcoming</span>
+        </div>
+        <div class="card-footer"><a href="grobnik.html">View Event Page →</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">2025 <span class="accent">Season — Archive</span></h2>
     <div class="races-grid">
 
       <div class="race-card">
@@ -69,9 +97,7 @@
           <div class="card-date">5 – 6 July 2025</div>
           <span class="card-status completed">Completed</span>
         </div>
-        <div class="card-footer">
-          <a href="serres.html">View Event Page →</a>
-        </div>
+        <div class="card-footer"><a href="serres.html">View Event Page →</a></div>
       </div>
 
       <div class="race-card">
@@ -83,57 +109,46 @@
           <div class="card-date">27 – 29 June 2025</div>
           <span class="card-status completed">Completed</span>
         </div>
-        <div class="card-footer">
-          <a href="torpoznan.html">View Event Page →</a>
-        </div>
-      </div>
-
-      <div class="race-card">
-        <div class="card-band" style="background: var(--accent2);"></div>
-        <div class="card-body">
-          <div class="card-round" style="color: var(--accent2);">Round 1 — 2026</div>
-          <h3>Grobnik</h3>
-          <div class="card-country">🇭🇷 Croatia — Automotodrom Grobnik, Rijeka</div>
-          <div class="card-date">Date TBC — 2026</div>
-          <span class="card-status upcoming">Upcoming</span>
-        </div>
-        <div class="card-footer">
-          <a href="grobnik.html">View Event Page →</a>
-        </div>
+        <div class="card-footer"><a href="torpoznan.html">View Event Page →</a></div>
       </div>
 
     </div>
   </section>
 
-  <!-- About -->
   <section>
     <h2 class="section-title">About <span class="accent">This Portal</span></h2>
-    <div class="notice blue">
-      <strong>Official Technical Commission Notice Board</strong>
-      <p>This portal is maintained by the Automobile Federation of North Macedonia (AFNM) Technical Commission. It serves as the official digital notice board for all FIA Central European Zone (CEZ) events organised under AFNM. All bulletins, supplementary regulations, entry lists, and official communications are published here.</p>
-    </div>
-    <div class="notice">
-      <strong>Championship Information</strong>
-      <p>The FIA Central European Zone Championship covers circuit racing across Central and Eastern Europe. AFNM oversees participation of competitors representing North Macedonia, and is responsible for technical scrutineering, officiating, and administrative functions at designated events.</p>
+    <div class="two-col">
+      <div class="notice blue">
+        <strong>Official Technical Commission Notice Board</strong>
+        <p>This portal is maintained by the AFNM Technical Commission. It serves as the official digital notice board for all FIA CEZ events organised under AFNM. All bulletins, supplementary regulations, entry lists, and official communications are published here.</p>
+      </div>
+      <div class="notice">
+        <strong>FIA CEZ Championship</strong>
+        <p>The FIA Central European Zone Championship covers circuit racing across Central and Eastern Europe. AFNM oversees competitors representing North Macedonia and is responsible for technical scrutineering, officiating, and administrative functions at designated events.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <section>
+    <h2 class="section-title">Quick <span class="accent">Links</span></h2>
+    <a class="download-link external" href="https://www.cez-motorsport.com/regulations/" target="_blank">CEZ Regulations 2025</a>
+    <a class="download-link external" href="https://www.fia.com/regulation/category/110" target="_blank">FIA Sporting Regulations</a>
+    <a class="download-link external" href="https://www.cez-motorsport.com/" target="_blank">FIA CEZ Official Site</a>
+    <a class="download-link external" href="https://afm.com.mk" target="_blank">AFNM Official Site</a>
+  </section>
+
   <section>
     <h2 class="section-title">Contact <span class="accent">Information</span></h2>
     <div class="notice">
-      <strong>Mr. Mario Blazhevski</strong>
-      <p>
-        Address: ul. Partenij Zografski 28A <br />
-        Telephone: +389 77 752 449<br />
-        E-mail: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a>
-      </p>
+      <strong>📦 AK Performans — Event Organiser</strong>
+      <p>Address: ul. Franklin Ruzvelt br. 40/1-12<br/>
+      Telephone: +38976431880<br/>
+      E-mail: <a href="mailto:akperformans@gmail.com">akperformans@gmail.com</a></p>
     </div>
   </section>
 
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
   <div class="footer-logos">
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />

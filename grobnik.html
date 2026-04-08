@@ -16,10 +16,20 @@
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="serres.html">Serres</a>
-      <a href="torpoznan.html">Tor Poznań</a>
-      <a href="grobnik.html" class="active">Grobnik</a>
-      <a href="bulletins.html">All Bulletins</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn">Races <span class="arrow">▼</span></button>
+        <div class="nav-dropdown-content">
+          <div class="drop-label">2026 Season</div>
+          <a href="grobnik.html">🇭🇷 Grobnik, Croatia</a>
+          <div class="drop-divider"></div>
+          <div class="drop-label">2025 Season</div>
+          <a href="serres.html">🇬🇷 Serres, Greece</a>
+          <a href="torpoznan.html">🇵🇱 Tor Poznań, Poland</a>
+        </div>
+      </div>
+      <a href="commission.html">Commission</a>
+      <a href="regulations.html">Regulations</a>
+      <a href="bulletins.html">Bulletins</a>
     </div>
   </div>
 </nav>
@@ -36,63 +46,40 @@
 
 <main class="page-main">
 
+  <div class="notice blue" style="margin-bottom: 32px;">
+    <strong>🗓 Upcoming Event — FIA CEZ 2026</strong>
+    <p>This is an upcoming round of the FIA Central European Zone Championship. Documents, bulletins, and schedule will be published here as they become available.</p>
+  </div>
+
   <nav style="margin-bottom: 32px; display: flex; gap: 8px; flex-wrap: wrap;">
     <a class="download-link" href="#notices" style="background:var(--mid);">Bulletins</a>
     <a class="download-link" href="#documents" style="background:var(--mid);">Documents</a>
     <a class="download-link" href="#schedule" style="background:var(--mid);">Schedule</a>
-    <a class="download-link" href="#media" style="background:var(--mid);">Media</a>
     <a class="download-link" href="#weather" style="background:var(--mid);">Weather</a>
     <a class="download-link" href="#info" style="background:var(--mid);">Event Info</a>
   </nav>
 
-  <!-- Status notice -->
-  <div class="notice blue" style="margin-bottom: 32px;">
-    <strong>🗓 Upcoming Event — FIA CEZ 2026</strong>
-    <p>This is an upcoming round of the FIA Central European Zone Championship. Documents, bulletins, and schedule information will be published here as they become available. Check back regularly.</p>
-  </div>
-
-  <!-- Bulletins -->
   <section id="notices">
     <h2 class="section-title">Latest <span class="accent">Bulletins</span></h2>
-    <div id="bulletin-container">
-      <p style="color:var(--muted);">No bulletins published yet. Check back closer to the event.</p>
-    </div>
+    <p style="color:var(--muted); font-size:14px;">No bulletins published yet. Check back closer to the event.</p>
   </section>
 
-  <!-- Documents -->
   <section id="documents">
     <h2 class="section-title">Official <span class="accent">Documents</span></h2>
     <div class="notice">
       <strong>Documents</strong>
-      <p>Documents will be uploaded prior to the event weekend. Supplementary Regulations and Entry Forms will appear here.</p>
+      <p>Supplementary Regulations and Entry Form will be uploaded here prior to the event weekend.</p>
     </div>
-    <!-- Uncomment when available:
-    <a class="download-link" href="Supplementary-Regulation-Grobnik-2026.pdf" target="_blank">Supplementary Regulation</a>
-    -->
   </section>
 
-  <!-- Schedule -->
   <section id="schedule">
     <h2 class="section-title">Event <span class="accent">Schedule</span></h2>
     <div class="notice">
       <strong>Schedule</strong>
-      <p>The full timetable will be published here ahead of the event. Please check back regularly for updates.</p>
+      <p>The full timetable will be published here ahead of the event.</p>
     </div>
   </section>
 
-  <!-- Media -->
-  <section id="media">
-    <h2 class="section-title">Media</h2>
-    <div class="notice">
-      <strong>Media Gallery</strong>
-      <p>Photos and videos from the event will appear here. A promotional poster will be added when available.</p>
-    </div>
-    <!-- Uncomment when poster is available:
-    <img src="grobnik-poster.jpg" alt="Grobnik 2026 Event Poster" style="width:100%; max-width:660px; border-radius:4px; border:1px solid var(--border);" />
-    -->
-  </section>
-
-  <!-- Weather -->
   <section id="weather">
     <h2 class="section-title">Weather — <span class="accent">Grobnik Circuit</span></h2>
     <div class="weather-embed">
@@ -100,49 +87,29 @@
     </div>
   </section>
 
-  <!-- Event Info -->
   <section id="info">
     <h2 class="section-title">Event <span class="accent">Information</span></h2>
-
     <div class="notice">
       <strong>🏁 Event Details</strong>
       <p><strong>FIA CEZ Circuit Race — Grobnik 2026</strong><br/>
       📍 Automotodrom Grobnik, Rijeka, Croatia<br/>
       📅 Date: TBC — 2026</p>
     </div>
-
     <div class="notice">
       <strong>📦 Organiser</strong>
-      <p>
-        Information to be confirmed.<br/>
-        KRENEK MOTORSPORT s.r.o. — Clio Cup Bohemia<br/>
-        RACING TREVOR, Slovakia — GT CUP SERIES<br/>
-        In cooperation with FIA CEZ & ACCR ASN<br/>
-        E-mail: <a href="mailto:blazevskimario1@gmail.com">blazevskimario1@gmail.com</a>
-      </p>
+      <p>Information to be confirmed.<br/>E-mail: <a href="mailto:akperformans@gmail.com">akperformans@gmail.com</a></p>
     </div>
-
     <div class="notice">
       <strong>📢 Championships Present</strong>
-      <p>
-        FIA CEZ Circuit &amp; Endurance Championship<br/>
-        Championship for North Macedonia
-      </p>
+      <p>FIA CEZ Circuit &amp; Endurance Championship<br/>Championship for North Macedonia</p>
     </div>
-
     <div class="notice">
       <strong>🧑‍⚖️ Officials</strong>
       <p>Officials will be published in the Supplementary Regulations for Grobnik 2026.</p>
     </div>
-
     <div class="notice">
       <strong>📌 Key Locations</strong>
-      <p>
-        Race Control: TBC<br/>
-        Race Office: TBC<br/>
-        Stewards' Office: TBC<br/>
-        Official Notice Board: TBC
-      </p>
+      <p>Race Control: TBC<br/>Race Office: TBC<br/>Stewards' Office: TBC<br/>Official Notice Board: TBC</p>
     </div>
   </section>
 

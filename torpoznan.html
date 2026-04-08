@@ -16,10 +16,20 @@
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="serres.html">Serres</a>
-      <a href="torpoznan.html" class="active">Tor Poznań</a>
-      <a href="grobnik.html">Grobnik</a>
-      <a href="bulletins.html">All Bulletins</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn">Races <span class="arrow">▼</span></button>
+        <div class="nav-dropdown-content">
+          <div class="drop-label">2026 Season</div>
+          <a href="grobnik.html">🇭🇷 Grobnik, Croatia</a>
+          <div class="drop-divider"></div>
+          <div class="drop-label">2025 Season</div>
+          <a href="serres.html">🇬🇷 Serres, Greece</a>
+          <a href="torpoznan.html">🇵🇱 Tor Poznań, Poland</a>
+        </div>
+      </div>
+      <a href="commission.html">Commission</a>
+      <a href="regulations.html">Regulations</a>
+      <a href="bulletins.html">Bulletins</a>
     </div>
   </div>
 </nav>
@@ -36,15 +46,18 @@
 
 <main class="page-main">
 
+  <div class="notice green" style="margin-bottom: 32px;">
+    <strong>✅ Event Completed — 27–29 June 2025</strong>
+    <p>This event has concluded. All official bulletins are available in the <a href="bulletins.html">Bulletin Archive</a>.</p>
+  </div>
+
   <nav style="margin-bottom: 32px; display: flex; gap: 8px; flex-wrap: wrap;">
     <a class="download-link" href="#documents" style="background:var(--mid);">Documents</a>
-    <a class="download-link" href="#schedule" style="background:var(--mid);">Schedule</a>
     <a class="download-link" href="#media" style="background:var(--mid);">Media</a>
     <a class="download-link" href="#weather" style="background:var(--mid);">Weather</a>
     <a class="download-link" href="#info" style="background:var(--mid);">Event Info</a>
   </nav>
 
-  <!-- Documents -->
   <section id="documents">
     <h2 class="section-title">Official <span class="accent">Documents</span></h2>
     <a class="download-link" href="Entrylist_2025_POZNAN_CLIO CUP.xlsx" download>Clio Cup Entry List</a>
@@ -58,22 +71,11 @@
     <a class="download-link" href="GTC_CARS___2025_season 07_04_2025 Final.pdf" download>GTC Car List</a>
   </section>
 
-  <!-- Schedule -->
-  <section id="schedule">
-    <h2 class="section-title">Event <span class="accent">Schedule</span></h2>
-    <div class="notice">
-      <strong>Schedule</strong>
-      <p>Schedule details will be updated here soon. Please check back for official timing and session information.</p>
-    </div>
-  </section>
-
-  <!-- Media -->
   <section id="media">
     <h2 class="section-title">Media</h2>
     <img src="poznan-poster.jpg" alt="Tor Poznań 2025 Event Poster" style="width:100%; max-width:660px; border-radius:4px; border:1px solid var(--border);" />
   </section>
 
-  <!-- Weather -->
   <section id="weather">
     <h2 class="section-title">Weather — <span class="accent">Tor Poznań</span></h2>
     <div class="weather-embed">
@@ -81,48 +83,27 @@
     </div>
   </section>
 
-  <!-- Event Info -->
   <section id="info">
     <h2 class="section-title">Event <span class="accent">Information</span></h2>
-
     <div class="notice">
       <strong>📍 Location &amp; Date</strong>
-      <p><strong>Tor Poznań Circuit, Poland</strong><br/>
-      📅 27 – 29 June 2025</p>
+      <p><strong>Tor Poznań Circuit, Poland</strong><br/>📅 27 – 29 June 2025</p>
     </div>
-
     <div class="notice">
       <strong>📦 Organisers</strong>
-      <p>
-        KRENEK MOTORSPORT s.r.o. — Clio Cup Bohemia<br/>
-        RACING TREVOR, Slovakia — GT CUP SERIES<br/>
-        In cooperation with FIA CEZ &amp; ACCR ASN
-      </p>
+      <p>KRENEK MOTORSPORT s.r.o. — Clio Cup Bohemia<br/>RACING TREVOR, Slovakia — GT CUP SERIES<br/>In cooperation with FIA CEZ &amp; ACCR ASN</p>
     </div>
-
     <div class="notice">
       <strong>📢 Championships Present</strong>
-      <p>
-        GT CUP SERIES (GT3 / GT4 / GTC)<br/>
-        TCC — Clio Cup Bohemia<br/>
-        TCREE — TCR Eastern Europe<br/>
-        FIA F4 CEZ Championship
-      </p>
+      <p>GT CUP SERIES (GT3 / GT4 / GTC)<br/>TCC — Clio Cup Bohemia<br/>TCREE — TCR Eastern Europe<br/>FIA F4 CEZ Championship</p>
     </div>
-
     <div class="notice">
       <strong>🧑‍⚖️ Officials</strong>
-      <p>Information to be published in the Supplementary Regulations and Entry Bulletin for Poznań 2025.</p>
+      <p>Information published in the Supplementary Regulations and Entry Bulletin for Poznań 2025.</p>
     </div>
-
     <div class="notice">
       <strong>📌 On-Site Facilities</strong>
-      <p>
-        Race Control: Main Building<br/>
-        Technical Scrutineering Area: Garage Row<br/>
-        Media Centre: 1st Floor, Main Building<br/>
-        Official Notice Board: Event Secretariat, Ground Level
-      </p>
+      <p>Race Control: Main Building<br/>Technical Scrutineering: Garage Row<br/>Media Centre: 1st Floor, Main Building<br/>Official Notice Board: Event Secretariat, Ground Level</p>
     </div>
   </section>
 

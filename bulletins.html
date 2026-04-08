@@ -16,9 +16,19 @@
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="serres.html">Serres</a>
-      <a href="torpoznan.html">Tor Poznań</a>
-      <a href="grobnik.html">Grobnik</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn">Races <span class="arrow">▼</span></button>
+        <div class="nav-dropdown-content">
+          <div class="drop-label">2026 Season</div>
+          <a href="grobnik.html">🇭🇷 Grobnik, Croatia</a>
+          <div class="drop-divider"></div>
+          <div class="drop-label">2025 Season</div>
+          <a href="serres.html">🇬🇷 Serres, Greece</a>
+          <a href="torpoznan.html">🇵🇱 Tor Poznań, Poland</a>
+        </div>
+      </div>
+      <a href="commission.html">Commission</a>
+      <a href="regulations.html">Regulations</a>
       <a href="bulletins.html" class="active">Bulletins</a>
     </div>
   </div>
@@ -27,11 +37,9 @@
 <header class="page-header">
   <div class="logos">
     <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM Logo" />
-    <img src="fia_wordmakr.png" alt="FIA Logo" />
-    <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" />
   </div>
   <h1>Bulletin <span>Archive</span></h1>
-  <p>Official communications — AFNM Technical Commission</p>
+  <p>Official Communications — AFNM Technical Commission</p>
 </header>
 
 <main class="page-main">
@@ -54,7 +62,7 @@
 <script>
   fetch('bulletins.json')
     .then(r => {
-      if (!r.ok) throw new Error('Network response was not ok');
+      if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     })
     .then(bulletins => {
@@ -77,7 +85,7 @@
     .catch(err => {
       console.error(err);
       document.getElementById('bulletin-archive').innerHTML =
-        '<div class="notice" style="border-left-color:var(--accent)"><strong>Could not load bulletins</strong><p>Please try refreshing the page.</p></div>';
+        '<div class="notice" style="border-left-color:var(--accent)"><strong>Could not load bulletins</strong><p>Please try refreshing the page. If the problem persists, check that bulletins.json is valid JSON.</p></div>';
     });
 </script>
 
