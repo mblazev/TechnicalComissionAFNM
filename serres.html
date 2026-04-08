@@ -153,7 +153,7 @@
 </footer>
 
 <script>
-  fetch('bulletins.json')
+  fetch('https://mblazev.github.io/TechnicalComissionAFNM/bulletins.json')
     .then(r => r.json())
     .then(bulletins => {
       const el = document.getElementById('bulletin-container');
