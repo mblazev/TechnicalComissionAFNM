@@ -3,162 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tor Poznań 2025 - Official Press & Notice Board</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-    }
-    .notice {
-      background: #eef;
-      border-left: 4px solid #0055aa;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: white;
-    }
-    .download-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #0055aa;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .download-link:hover {
-      background-color: #003e80;
-    }
-  </style>
+  <title>Tor Poznań 2025 — Official Notice Board | AFNM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFM Logo" />
-    <h1>Tor Poznań 2025 - Official Press & Notice Board</h1>
-    <p>Automobile Federation of North Macedonia - Technical Commission</p>
-    <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 10px;">
-      <img src="fia_wordmakr.png" alt="FIA Logo" style="width: 100px;" />
-      <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" style="width: 100px;" />
-    </div>
-  </header>
 
-  <nav>
-    <a href="index.html">Back to Serres 2025</a>
-    <a href="#documents">Documents</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#media">Media</a>
-    <a href="#info">Event Info</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+      AFNM · Tech Commission
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="serres.html">Serres</a>
+      <a href="torpoznan.html" class="active">Tor Poznań</a>
+      <a href="grobnik.html">Grobnik</a>
+      <a href="bulletins.html">All Bulletins</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM Logo" />
+    <img src="fia_wordmakr.png" alt="FIA Logo" />
+    <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" />
+  </div>
+  <h1>Tor Poznań <span>2025</span></h1>
+  <p>Official Press &amp; Notice Board — Tor Poznań Circuit, Poland</p>
+</header>
+
+<main class="page-main">
+
+  <nav style="margin-bottom: 32px; display: flex; gap: 8px; flex-wrap: wrap;">
+    <a class="download-link" href="#documents" style="background:var(--mid);">Documents</a>
+    <a class="download-link" href="#schedule" style="background:var(--mid);">Schedule</a>
+    <a class="download-link" href="#media" style="background:var(--mid);">Media</a>
+    <a class="download-link" href="#weather" style="background:var(--mid);">Weather</a>
+    <a class="download-link" href="#info" style="background:var(--mid);">Event Info</a>
   </nav>
 
-  <main>
-    <section id="documents">
-      <h2>Official Documents</h2>
-      <a class="download-link" href="Entrylist_2025_POZNAN_CLIO CUP.xlsx" download>Clio Cup Entry List</a><br>
-      <a class="download-link" href="GT_CUP_Series_Entrylist_Poznan_Org_v3_18.06.2025.xlsx" download>GT Cup Entry List</a><br>
-      <a class="download-link" href="2025 GT CUP SERIES_General Regulations_V1.docx" download>GT CUP Series Regulations</a><br>
-      <a class="download-link" href="2025 TCC_ Sporting and Technical Regulations_final.pdf" download>Clio Cup Sporting Regulations</a><br>
-      <a class="download-link" href="2025 TCREE_ Sporting Regulations.pdf" download>TCR Eastern Europe Regulations</a><br>
-      <a class="download-link" href="2025_FIA_F4_Sporting Regulations_final.pdf" download>FIA F4 Regulations</a><br>
-      <a class="download-link" href="GT3_CARS___2025_season 07_04_2025   Final.pdf" download>GT3 Car List</a><br>
-      <a class="download-link" href="GT4_CARS___2024_season 07_04_2025 Final.pdf" download>GT4 Car List</a><br>
-      <a class="download-link" href="GTC_CARS___2025_season 07_04_2025 Final.pdf" download>GTC Car List</a>
-    </section>
+  <!-- Documents -->
+  <section id="documents">
+    <h2 class="section-title">Official <span class="accent">Documents</span></h2>
+    <a class="download-link" href="Entrylist_2025_POZNAN_CLIO CUP.xlsx" download>Clio Cup Entry List</a>
+    <a class="download-link" href="GT_CUP_Series_Entrylist_Poznan_Org_v3_18.06.2025.xlsx" download>GT Cup Entry List</a>
+    <a class="download-link" href="2025 GT CUP SERIES_General Regulations_V1.docx" download>GT CUP Series Regulations</a>
+    <a class="download-link" href="2025 TCC_ Sporting and Technical Regulations_final.pdf" download>Clio Cup Sporting Regulations</a>
+    <a class="download-link" href="2025 TCREE_ Sporting Regulations.pdf" download>TCR Eastern Europe Regulations</a>
+    <a class="download-link" href="2025_FIA_F4_Sporting Regulations_final.pdf" download>FIA F4 Regulations</a>
+    <a class="download-link" href="GT3_CARS___2025_season 07_04_2025 Final.pdf" download>GT3 Car List</a>
+    <a class="download-link" href="GT4_CARS___2024_season 07_04_2025 Final.pdf" download>GT4 Car List</a>
+    <a class="download-link" href="GTC_CARS___2025_season 07_04_2025 Final.pdf" download>GTC Car List</a>
+  </section>
 
-    <section id="schedule">
-      <h2>Event Schedule</h2>
-      <p>Schedule details will be updated here soon. Please check back for official timing and session info.</p>
-    </section>
+  <!-- Schedule -->
+  <section id="schedule">
+    <h2 class="section-title">Event <span class="accent">Schedule</span></h2>
+    <div class="notice">
+      <strong>Schedule</strong>
+      <p>Schedule details will be updated here soon. Please check back for official timing and session information.</p>
+    </div>
+  </section>
 
-    <section id="media">
-      <h2>Media</h2>
-      <p>Photos and videos will be posted here throughout the event weekend.</p>
-      <img src="poznan-poster.jpg" alt="Tor Poznań Event Poster" style="width:100%; max-width:700px; display:block; margin:auto; margin-top:20px;" />
-    </section>
+  <!-- Media -->
+  <section id="media">
+    <h2 class="section-title">Media</h2>
+    <img src="poznan-poster.jpg" alt="Tor Poznań 2025 Event Poster" style="width:100%; max-width:660px; border-radius:4px; border:1px solid var(--border);" />
+  </section>
 
-    <section id="info">
-      <h2>Event Information</h2>
-      <div class="notice">
-        <strong>📍 Location & Date</strong>
-        <p><strong>Tor Poznań Circuit, Poland</strong><br>Date: 27-29 June 2025</p>
-      </div>
+  <!-- Weather -->
+  <section id="weather">
+    <h2 class="section-title">Weather — <span class="accent">Tor Poznań</span></h2>
+    <div class="weather-embed">
+      <iframe src="https://embed.windy.com/embed2.html?lat=52.378&lon=16.965&detailLat=52.378&detailLon=16.965&width=650&height=450&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=12&pressure=true&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
+    </div>
+  </section>
 
-      <div class="notice">
-        <strong>📦 Organizers</strong>
-        <p>
-          KRENEK MOTORSPORT s.r.o. (Clio Cup Bohemia)<br>
-          RACING TREVOR, Slovakia (GT CUP SERIES)<br>
-          In cooperation with FIA CEZ & ACCR ASN
-        </p>
-      </div>
+  <!-- Event Info -->
+  <section id="info">
+    <h2 class="section-title">Event <span class="accent">Information</span></h2>
 
-      <div class="notice">
-        <strong>📢 Championships Present</strong>
-        <p>
-          - GT CUP SERIES (GT3 / GT4 / GTC)<br>
-          - TCC - Clio Cup Bohemia<br>
-          - TCREE - TCR Eastern Europe<br>
-          - FIA F4 CEZ Championship
-        </p>
-      </div>
+    <div class="notice">
+      <strong>📍 Location &amp; Date</strong>
+      <p><strong>Tor Poznań Circuit, Poland</strong><br/>
+      📅 27 – 29 June 2025</p>
+    </div>
 
-      <div class="notice">
-        <strong>🧑‍⚖️ Officials</strong>
-        <p>
-          Information to be published in the Supplementary Regulations and Entry Bulletin for Poznań 2025.
-        </p>
-      </div>
+    <div class="notice">
+      <strong>📦 Organisers</strong>
+      <p>
+        KRENEK MOTORSPORT s.r.o. — Clio Cup Bohemia<br/>
+        RACING TREVOR, Slovakia — GT CUP SERIES<br/>
+        In cooperation with FIA CEZ &amp; ACCR ASN
+      </p>
+    </div>
 
-      <div class="notice">
-        <strong>📌 On-Site Facilities</strong>
-        <p>
-          - Race Control: Main Building<br>
-          - Technical Scrutineering Area: Garage Row<br>
-          - Media Center: 1st Floor, Main Building<br>
-          - Official Notice Board: Event Secretariat, Ground Level
-        </p>
-      </div>
-    </section>
-  </main>
+    <div class="notice">
+      <strong>📢 Championships Present</strong>
+      <p>
+        GT CUP SERIES (GT3 / GT4 / GTC)<br/>
+        TCC — Clio Cup Bohemia<br/>
+        TCREE — TCR Eastern Europe<br/>
+        FIA F4 CEZ Championship
+      </p>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
-  </footer>
+    <div class="notice">
+      <strong>🧑‍⚖️ Officials</strong>
+      <p>Information to be published in the Supplementary Regulations and Entry Bulletin for Poznań 2025.</p>
+    </div>
+
+    <div class="notice">
+      <strong>📌 On-Site Facilities</strong>
+      <p>
+        Race Control: Main Building<br/>
+        Technical Scrutineering Area: Garage Row<br/>
+        Media Centre: 1st Floor, Main Building<br/>
+        Official Notice Board: Event Secretariat, Ground Level
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+    <img src="fia_wordmakr.png" alt="FIA" />
+    <img src="Central_European_Zone_logo.jpg" alt="CEZ" />
+  </div>
+  <p class="footer-copy">&copy; 2025 Automobile Federation of North Macedonia — Technical Commission</p>
+</footer>
+
 </body>
 </html>

@@ -3,185 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grobnik 2026 - Official Press & Notice Board</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-    }
-    .notice {
-      background: #eef;
-      border-left: 4px solid #0055aa;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: white;
-    }
-    .download-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #0055aa;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .download-link:hover {
-      background-color: #003e80;
-    }
-  </style>
+  <title>Grobnik 2026 — Official Notice Board | AFNM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFM Logo" />
-  <h1>Grobnik 2026 - Official Press &amp; Notice Board</h1>
-  <p>Automobile Federation of North Macedonia - Technical Commission</p>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 10px;">
-    <img src="fia_wordmakr.png" alt="FIA Logo" style="width: 100px;" />
-    <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" style="width: 100px;" />
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+      AFNM · Tech Commission
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="serres.html">Serres</a>
+      <a href="torpoznan.html">Tor Poznań</a>
+      <a href="grobnik.html" class="active">Grobnik</a>
+      <a href="bulletins.html">All Bulletins</a>
+    </div>
   </div>
-</header>
-
-<nav>
-  <a href="index.html">Back to Serres 2025</a>
-  <a href="#documents">Documents</a>
-  <a href="#schedule">Schedule</a>
-  <a href="#media">Media</a>
-  <a href="#weather">Weather</a>
-  <a href="#info">Event Info</a>
 </nav>
 
-<main>
+<header class="page-header">
+  <div class="logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM Logo" />
+    <img src="fia_wordmakr.png" alt="FIA Logo" />
+    <img src="Central_European_Zone_logo.jpg" alt="CEZ Logo" />
+  </div>
+  <h1>Grobnik <span>2026</span></h1>
+  <p>Official Press &amp; Notice Board — Automotodrom Grobnik, Rijeka, Croatia</p>
+</header>
 
+<main class="page-main">
+
+  <nav style="margin-bottom: 32px; display: flex; gap: 8px; flex-wrap: wrap;">
+    <a class="download-link" href="#notices" style="background:var(--mid);">Bulletins</a>
+    <a class="download-link" href="#documents" style="background:var(--mid);">Documents</a>
+    <a class="download-link" href="#schedule" style="background:var(--mid);">Schedule</a>
+    <a class="download-link" href="#media" style="background:var(--mid);">Media</a>
+    <a class="download-link" href="#weather" style="background:var(--mid);">Weather</a>
+    <a class="download-link" href="#info" style="background:var(--mid);">Event Info</a>
+  </nav>
+
+  <!-- Status notice -->
+  <div class="notice blue" style="margin-bottom: 32px;">
+    <strong>🗓 Upcoming Event — FIA CEZ 2026</strong>
+    <p>This is an upcoming round of the FIA Central European Zone Championship. Documents, bulletins, and schedule information will be published here as they become available. Check back regularly.</p>
+  </div>
+
+  <!-- Bulletins -->
   <section id="notices">
-    <h2>Latest Notices</h2>
+    <h2 class="section-title">Latest <span class="accent">Bulletins</span></h2>
     <div id="bulletin-container">
-      <p>No bulletins published yet. Check back closer to the event.</p>
+      <p style="color:var(--muted);">No bulletins published yet. Check back closer to the event.</p>
     </div>
   </section>
 
+  <!-- Documents -->
   <section id="documents">
-    <h2>Official Documents</h2>
-    <p>Click below to download the latest regulations and bulletins.</p>
-    <p><em>Documents will be uploaded prior to the event weekend.</em></p>
-    <!-- Example:
-    <a class="download-link" href="Supplementary-Regulation-Grobnik-2026.pdf" target="_blank">Download Supplementary Regulation</a>
+    <h2 class="section-title">Official <span class="accent">Documents</span></h2>
+    <div class="notice">
+      <strong>Documents</strong>
+      <p>Documents will be uploaded prior to the event weekend. Supplementary Regulations and Entry Forms will appear here.</p>
+    </div>
+    <!-- Uncomment when available:
+    <a class="download-link" href="Supplementary-Regulation-Grobnik-2026.pdf" target="_blank">Supplementary Regulation</a>
     -->
   </section>
 
+  <!-- Schedule -->
   <section id="schedule">
-    <h2>Event Schedule</h2>
-    <p>The full time schedule will be uploaded soon. Please check back regularly for updates.</p>
+    <h2 class="section-title">Event <span class="accent">Schedule</span></h2>
+    <div class="notice">
+      <strong>Schedule</strong>
+      <p>The full timetable will be published here ahead of the event. Please check back regularly for updates.</p>
+    </div>
   </section>
 
+  <!-- Media -->
   <section id="media">
-    <h2>Media</h2>
-    <p>Photos and videos from the event will appear here.</p>
-    <!-- Uncomment and update when poster is available:
-    <img src="grobnik-poster.jpg" alt="Grobnik 2026 Event Poster" style="width:100%; max-width:700px; display:block; margin:auto; margin-top:20px;" />
+    <h2 class="section-title">Media</h2>
+    <div class="notice">
+      <strong>Media Gallery</strong>
+      <p>Photos and videos from the event will appear here. A promotional poster will be added when available.</p>
+    </div>
+    <!-- Uncomment when poster is available:
+    <img src="grobnik-poster.jpg" alt="Grobnik 2026 Event Poster" style="width:100%; max-width:660px; border-radius:4px; border:1px solid var(--border);" />
     -->
   </section>
 
+  <!-- Weather -->
   <section id="weather">
-    <h2>Current Weather at Grobnik Circuit</h2>
-    <div style="height:400px;width:100%;">
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://embed.windy.com/embed2.html?lat=45.373&lon=14.519&detailLat=45.373&detailLon=14.519&width=650&height=450&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=12&pressure=true&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
-        frameborder="0"
-      ></iframe>
+    <h2 class="section-title">Weather — <span class="accent">Grobnik Circuit</span></h2>
+    <div class="weather-embed">
+      <iframe src="https://embed.windy.com/embed2.html?lat=45.373&lon=14.519&detailLat=45.373&detailLon=14.519&width=650&height=450&zoom=10&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=12&pressure=true&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
     </div>
   </section>
 
+  <!-- Event Info -->
   <section id="info">
-    <h2>Event Information</h2>
+    <h2 class="section-title">Event <span class="accent">Information</span></h2>
 
     <div class="notice">
-      <strong>🏁 Name of the Event</strong>
-      <p><strong>FIA CEZ CIRCUIT RACE - GROBNIK 2026</strong></p>
-      <p>📍 Place: Automotodrom Grobnik, Rijeka, Croatia</p>
-      <p>📅 Date: 15-17 May 2026</p>
+      <strong>🏁 Event Details</strong>
+      <p><strong>FIA CEZ Circuit Race — Grobnik 2026</strong><br/>
+      📍 Automotodrom Grobnik, Rijeka, Croatia<br/>
+      📅 Date: TBC — 2026</p>
     </div>
 
     <div class="notice">
-      <strong>📦 Organizer</strong>
+      <strong>📦 Organiser</strong>
       <p>
-        Information to be confirmed.<br>
-        E-mail: <a href="mailto:blazevskimario1@gmail.com">akperformans@gmail.com</a>
+        Information to be confirmed.<br/>
+        E-mail: <a href="mailto:akperformans@gmail.com">akperformans@gmail.com</a>
       </p>
     </div>
 
     <div class="notice">
-      <strong>📢 Status of the Event</strong>
+      <strong>📢 Championships Present</strong>
       <p>
-        - FIA CEZ Circuit and Endurance Championship<br>
-       
+        FIA CEZ Circuit &amp; Endurance Championship<br/>
+        Championship for North Macedonia
       </p>
     </div>
 
     <div class="notice">
       <strong>🧑‍⚖️ Officials</strong>
-      <p>
-        Information will be published in the Supplementary Regulations for Grobnik 2026.
-      </p>
+      <p>Officials will be published in the Supplementary Regulations for Grobnik 2026.</p>
     </div>
 
     <div class="notice">
-      <strong>📌 Locations</strong>
+      <strong>📌 Key Locations</strong>
       <p>
-        Race Control: TBC<br>
-        Race Office: TBC<br>
-        Stewards' Office: TBC<br>
+        Race Control: TBC<br/>
+        Race Office: TBC<br/>
+        Stewards' Office: TBC<br/>
         Official Notice Board: TBC
-        FIA CEZ Scrutineers: Mario Blazhevski and Daniel Chmelinek
       </p>
     </div>
-
   </section>
 
 </main>
 
-<footer>
-  <p>&copy; 2026 Automobile Federation of North Macedonia</p>
+<footer class="site-footer">
+  <div class="footer-logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+    <img src="fia_wordmakr.png" alt="FIA" />
+    <img src="Central_European_Zone_logo.jpg" alt="CEZ" />
+  </div>
+  <p class="footer-copy">&copy; 2026 Automobile Federation of North Macedonia — Technical Commission</p>
 </footer>
 
 </body>

@@ -3,78 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serres 2025 - Bulletin Archive</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background-color: white;
-    }
-    .notice {
-      background: #eef;
-      border-left: 4px solid #0055aa;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-    }
-    a.back {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #0055aa;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a.back:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Bulletin Archive — Serres 2025 | AFNM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Bulletin Archive</h1>
-    <p>All published updates for Serres 2025</p>
-  </header>
-  <main>
-    <a href="index.html" class="back">← Back to Notice Board</a>
-    <div id="bulletin-archive">
-      <p>Loading bulletins...</p>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Automobile Federation of North Macedonia</p>
-  </footer>
 
-  <script>
-    fetch('bulletins.json')
-      .then(res => res.json())
-      .then(bulletins => {
-        const container = document.getElementById('bulletin-archive');
-        container.innerHTML = '';
-        const total = bulletins.length;
-        bulletins.reverse().forEach((b, i) => {
-          container.innerHTML += `
-            <div class="notice">
-              <strong>Bulletin ${String(total - i).padStart(2, '0')} - ${b.title} <span style='font-weight:normal;'>(Posted: ${b.timestamp})</span></strong>
-              <p>${b.content}</p>
-            </div>`;
-        });
-      })
-      .catch(err => {
-        document.getElementById('bulletin-archive').innerHTML = '<p>Could not load bulletins.</p>';
-        console.error(err);
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+      AFNM · Tech Commission
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="serres.html">Serres</a>
+      <a href="torpoznan.html">Tor Poznań</a>
+      <a href="grobnik.html">Grobnik</a>
+      <a href="bulletins.html" class="active">All Bulletins</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM Logo" />
+  </div>
+  <h1>Bulletin <span>Archive</span></h1>
+  <p>All published updates for Serres 2025</p>
+</header>
+
+<main class="page-main">
+
+  <a href="serres.html" style="display:inline-flex; align-items:center; gap:6px; font-family:var(--font-head); font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:28px;">← Back to Serres 2025</a>
+
+  <div id="bulletin-archive">
+    <p style="color:var(--muted);">Loading bulletins…</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logos">
+    <img src="ea48b0a3-b8c0-467f-838e-23affb25fd13.png" alt="AFNM" />
+    <img src="fia_wordmakr.png" alt="FIA" />
+    <img src="Central_European_Zone_logo.jpg" alt="CEZ" />
+  </div>
+  <p class="footer-copy">&copy; 2025 Automobile Federation of North Macedonia — Technical Commission</p>
+</footer>
+
+<script>
+  fetch('bulletins.json')
+    .then(r => r.json())
+    .then(bulletins => {
+      const el = document.getElementById('bulletin-archive');
+      el.innerHTML = '';
+      const total = bulletins.length;
+      bulletins.slice().reverse().forEach((b, i) => {
+        el.innerHTML += `
+          <div class="bulletin">
+            <div class="bull-meta">Bulletin ${String(total - i).padStart(2,'0')} &mdash; ${b.timestamp}</div>
+            <div class="bull-title">${b.title}</div>
+            <div class="bull-body">${b.content}</div>
+          </div>`;
       });
-  </script>
+    })
+    .catch(() => {
+      document.getElementById('bulletin-archive').innerHTML = '<p style="color:var(--muted)">Could not load bulletins.</p>';
+    });
+</script>
+
 </body>
 </html>
